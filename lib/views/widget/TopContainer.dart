@@ -3,14 +3,9 @@ import 'package:baap_app/consts/AppImages.dart';
 import 'package:baap_app/consts/AppString.dart';
 import 'package:flutter/material.dart';
 
-class TopContainer extends StatefulWidget {
+class TopContainer extends StatelessWidget {
   const TopContainer({Key? key}) : super(key: key);
 
-  @override
-  State<TopContainer> createState() => _TopContainerState();
-}
-
-class _TopContainerState extends State<TopContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,10 +24,7 @@ class _TopContainerState extends State<TopContainer> {
               Container(
                   child: const Text(
                 'The BAAP Company',
-                style: TextStyle(
-                    decoration: TextDecoration.none,
-                    fontSize: 20,
-                    color: Colors.white),
+                style: TextStyle(fontSize: 20, color: Colors.white),
               )),
               Container(
                 margin: const EdgeInsets.only(top: 10),
@@ -128,8 +120,82 @@ class _TopContainerState extends State<TopContainer> {
           ),
         ),
         Container(
-          margin: const EdgeInsets.only(top: 10),
-          child: const Text('Login with Phone / Email'),
+          margin: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                AppString.loginwith,
+                style: TextStyle(fontSize: 16, color: AppColors.containerlogin),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const TextField(
+                autofocus: false,
+                style: TextStyle(fontSize: 21.0, color: Colors.white),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Color(0xFF5E6088),
+                ),
+              ),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: Padding(
+              //         padding: const EdgeInsets.only(left: 25, top: 10),
+              //         child: GestureDetector(
+              //           onTap: () {
+              //             // bool _isSelected = false;
+              //             setState(() {
+              //               _isSelected = !_isSelected;
+              //             });
+              //           },
+              //           child: Row(
+              //             children: [
+              //               Container(
+              //                 height: 25,
+              //                 width: 25,
+              //                 decoration: BoxDecoration(
+              //                   color: _isSelected
+              //                       ? Colors.blue
+              //                       : Colors.transparent,
+              //                   borderRadius: BorderRadius.circular(0),
+              //                   border: _isSelected
+              //                       ? null
+              //                       : Border.all(
+              //                           color: const Color(0xffD1D5F2),
+              //                           width: 1.0,
+              //                         ),
+              //                 ),
+              //                 child: _isSelected
+              //                     ? const Icon(
+              //                         Icons.check,
+              //                         color: Colors.white,
+              //                       )
+              //                     : null,
+              //               ),
+              //               const Padding(
+              //                 padding: EdgeInsets.only(left: 15),
+              //                 child: Text(
+              //                   'Same as Permanent Address',
+              //                   style: TextStyle(
+              //                     color: Color(0xff898EBC),
+              //                     fontSize: 14,
+              //                     fontFamily: 'BaiJamjureeB',
+              //                   ),
+              //                 ),
+              //               ),
+              //             ],
+              //           ),
+              //         ),
+              //       ),
+              //     ),
+              //   ],
+              // ),
+            ],
+          ),
         )
       ]),
     );
@@ -164,7 +230,7 @@ class ContainerEX extends StatelessWidget {
             color: containerbackgroundshawdow,
             spreadRadius: 5,
             blurRadius: 0,
-            offset: const Offset(2, 3), // changes position of shadow
+            offset: const Offset(2, 3),
           ),
         ],
       ),

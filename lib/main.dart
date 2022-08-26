@@ -1,6 +1,5 @@
-
 import 'package:baap_app/consts/AppColors.dart';
-import 'package:baap_app/views/screens/Home.dart';
+import 'package:baap_app/views/screens/Login/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -30,7 +29,7 @@ class MyApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const HomePage(),
+        builder: (context, state) => const Login(),
       ),
       // GoRoute(
       //   path: '/topContainer',
