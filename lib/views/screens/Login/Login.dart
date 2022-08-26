@@ -1,4 +1,5 @@
-
+import 'package:baap_app/consts/AppColors.dart';
+import 'package:baap_app/consts/AppString.dart';
 import 'package:baap_app/views/widget/TopContainer.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,90 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const TopContainer();
+    return Scaffold(
+      body: Column(children: [
+        const SizedBox(
+          height: 400,
+          child: TopContainer(),
+        ),
+        Container(
+          margin: const EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                AppString.loginwith,
+                style: TextStyle(fontSize: 16, color: AppColors.loginwith),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const TextField(
+                autofocus: false,
+                style: TextStyle(fontSize: 21.0, color: Colors.white),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: Color(0xFF5E6088),
+                ),
+              ),
+              
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 25, top: 10),
+                      child: GestureDetector(
+                        onTap: () {
+                          // setState(() {
+                          //   _isSelected = !_isSelected;
+                          // });
+                        },
+                        child: Row(
+                          children: const [
+                            // Container(
+                            //   height: 25,
+                            //   width: 25,
+                            //   // decoration: BoxDecoration(
+                            //   //   color: _isSelected
+                            //   //       ? Colors.blue
+                            //   //       : Colors.transparent,
+                            //   //   borderRadius: BorderRadius.circular(0),
+                            //   //   border: _isSelected
+                            //   //       ? null
+                            //   //       : Border.all(
+                            //   //           color: const Color(0xffD1D5F2),
+                            //   //           width: 1.0,
+                            //   //         ),
+                            //   // ),
+                            //   // child: _isSelected
+                            //   //     ? const Icon(
+                            //   //         Icons.check,
+                            //   //         color: Colors.white,
+                            //   //       )
+                            //   //     : null,
+                            // ),
+                            Padding(
+                              padding: EdgeInsets.only(left: 15),
+                              child: Text(
+                                AppString.otponwhatapp,
+                                style: TextStyle(
+                                  color: Color(0xff898EBC),
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        )
+      ]),
+    );
   }
 }

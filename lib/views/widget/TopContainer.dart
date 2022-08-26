@@ -119,84 +119,8 @@ class TopContainer extends StatelessWidget {
             ]),
           ),
         ),
-        Container(
-          margin: const EdgeInsets.all(20),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                AppString.loginwith,
-                style: TextStyle(fontSize: 16, color: AppColors.containerlogin),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const TextField(
-                autofocus: false,
-                style: TextStyle(fontSize: 21.0, color: Colors.white),
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Color(0xFF5E6088),
-                ),
-              ),
-              // Row(
-              //   children: [
-              //     Expanded(
-              //       child: Padding(
-              //         padding: const EdgeInsets.only(left: 25, top: 10),
-              //         child: GestureDetector(
-              //           onTap: () {
-              //             // bool _isSelected = false;
-              //             setState(() {
-              //               _isSelected = !_isSelected;
-              //             });
-              //           },
-              //           child: Row(
-              //             children: [
-              //               Container(
-              //                 height: 25,
-              //                 width: 25,
-              //                 decoration: BoxDecoration(
-              //                   color: _isSelected
-              //                       ? Colors.blue
-              //                       : Colors.transparent,
-              //                   borderRadius: BorderRadius.circular(0),
-              //                   border: _isSelected
-              //                       ? null
-              //                       : Border.all(
-              //                           color: const Color(0xffD1D5F2),
-              //                           width: 1.0,
-              //                         ),
-              //                 ),
-              //                 child: _isSelected
-              //                     ? const Icon(
-              //                         Icons.check,
-              //                         color: Colors.white,
-              //                       )
-              //                     : null,
-              //               ),
-              //               const Padding(
-              //                 padding: EdgeInsets.only(left: 15),
-              //                 child: Text(
-              //                   'Same as Permanent Address',
-              //                   style: TextStyle(
-              //                     color: Color(0xff898EBC),
-              //                     fontSize: 14,
-              //                     fontFamily: 'BaiJamjureeB',
-              //                   ),
-              //                 ),
-              //               ),
-              //             ],
-              //           ),
-              //         ),
-              //       ),
-              //     ),
-              //   ],
-              // ),
-            ],
-          ),
-        )
+
+        
       ]),
     );
   }

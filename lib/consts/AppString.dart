@@ -10,6 +10,7 @@ class AppString {
   static const String listcontainernamepesticides = 'Pesticides';
 
   static const String loginwith = 'Login with Phone / Email';
+  static const String otponwhatapp = 'Send OTP on WhatsApp';
 
 
 

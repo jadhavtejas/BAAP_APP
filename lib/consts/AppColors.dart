@@ -8,7 +8,8 @@ class AppColors {
   static const Color listcontainershowdow = Color.fromRGBO(64, 66, 126, 1);
   static const Color listcontainericon = Color.fromRGBO(198, 199, 224, 1);
 
-  static const Color containerlogin = Color.fromRGBO(197, 198, 229, 1);
+  static const Color loginwith = Color.fromRGBO(197, 198, 229, 1);
+  static const Color container = Color.fromRGBO(197, 198, 229, 1);
 
 
 }

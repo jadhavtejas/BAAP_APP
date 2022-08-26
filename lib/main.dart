@@ -1,7 +1,7 @@
 import 'package:baap_app/consts/AppColors.dart';
-import 'package:baap_app/views/screens/Login/Login.dart';
+import 'package:baap_app/routes/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,33 +12,17 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) => MaterialApp.router(
-        routeInformationParser: _router.routeInformationParser,
-        routerDelegate: _router.routerDelegate,
-        routeInformationProvider: _router.routeInformationProvider,
+  Widget build(BuildContext context) => GetMaterialApp(
+        // routeInformationParser: Routes.routeInformationParser,
+        // routerDelegate: _router.routerDelegate,
+        // routeInformationProvider: _router.routeInformationProvider,
         title: 'BAAP APP',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: AppColors.scaffoldbackground,
           fontFamily: 'Avenir',
         ),
-        // home: HomePage(),
+        initialRoute: Routes.login,
+        getPages: Routes.routes,
       );
-  final _router = GoRouter(
-    initialLocation: '/',
-    routes: [
-      GoRoute(
-        path: '/',
-        builder: (context, state) => const Login(),
-      ),
-      // GoRoute(
-      //   path: '/topContainer',
-      //   builder: (context, state) => const TopContainer(),
-      // ),
-      // GoRoute(
-      //   path: '/',
-      //   builder: (context, state) => HomePage(),
-      // ),
-    ],
-  );
 }
