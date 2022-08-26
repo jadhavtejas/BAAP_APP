@@ -18,7 +18,7 @@ class TopContainer extends StatelessWidget {
           width: 300,
           height: 370,
           child: Container(
-            margin: const EdgeInsets.only(left: 20, top: 20),
+            margin: const EdgeInsets.only(left: 26, top: 20),
             child: Column(children: [
               // ignore: avoid_unnecessary_containers
               Container(
@@ -54,20 +54,25 @@ class TopContainer extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(right: 26, top: 10),
+                margin: const EdgeInsets.only(right: 26, top: 15),
                 child: const TextField(
+                  autofocus: false,
+                  style: TextStyle(fontSize: 14.0, color: Colors.white),
                   decoration: InputDecoration(
-                    suffixIcon: Icon(
-                      Icons.mic_none_outlined,
-                      size: 25,
-                    ),
-                    border: OutlineInputBorder(),
-                    hintText: AppString.containerinputhinttext,
-                  ),
+                      filled: true,
+                      fillColor: AppColors.textfieldbackground,
+                      suffixIcon: Icon(
+                        Icons.mic_none_outlined,
+                        color: Colors.white,
+                        size: 25,
+                      ),
+                      // border: OutlineInputBorder(),
+                      hintText: AppString.containerinputhinttext,
+                      hintStyle: TextStyle(color: Colors.white)),
                 ),
               ),
               Container(
-                margin: const EdgeInsets.only(top: 15, bottom: 15),
+                margin: const EdgeInsets.only(top: 20, bottom: 16),
                 alignment: Alignment.centerLeft,
                 child: const Text(
                   AppString.containerchooseservies,
@@ -119,8 +124,6 @@ class TopContainer extends StatelessWidget {
             ]),
           ),
         ),
-
-        
       ]),
     );
   }

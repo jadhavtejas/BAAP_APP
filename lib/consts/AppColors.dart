@@ -10,6 +10,8 @@ class AppColors {
 
   static const Color loginwith = Color.fromRGBO(197, 198, 229, 1);
   static const Color container = Color.fromRGBO(197, 198, 229, 1);
+  static const Color textfieldbackground = Color(0xff5E6088);
+  static const Color sendonwhatsapp = Color(0xffC5C6E5);
 
 
 }

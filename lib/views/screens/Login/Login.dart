@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
           child: TopContainer(),
         ),
         Container(
-          margin: const EdgeInsets.all(20),
+          margin: const EdgeInsets.only(top: 5, left: 26, right: 26),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,22 +25,21 @@ class Login extends StatelessWidget {
                 style: TextStyle(fontSize: 16, color: AppColors.loginwith),
               ),
               const SizedBox(
-                height: 10,
+                height: 16,
               ),
               const TextField(
                 autofocus: false,
-                style: TextStyle(fontSize: 21.0, color: Colors.white),
+                style: TextStyle(fontSize: 18.0, color: Colors.white),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: Color(0xFF5E6088),
+                  fillColor: AppColors.textfieldbackground,
                 ),
               ),
-              
               Row(
                 children: [
                   Expanded(
                     child: Padding(
-                      padding: const EdgeInsets.only(left: 25, top: 10),
+                      padding: const EdgeInsets.only(left: 27, top: 18),
                       child: GestureDetector(
                         onTap: () {
                           // setState(() {
