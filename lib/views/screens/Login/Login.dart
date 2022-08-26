@@ -75,7 +75,7 @@ class Login extends StatelessWidget {
                               child: Text(
                                 AppString.otponwhatapp,
                                 style: TextStyle(
-                                  color: Color(0xff898EBC),
+                                  color: AppColors.sendonwhatsapp,
                                   fontSize: 14,
                                 ),
                               ),
@@ -87,6 +87,21 @@ class Login extends StatelessWidget {
                   ),
                 ],
               ),
+              Container(
+                margin: EdgeInsets.only(top: 16),
+                child: Row(
+                  children: [
+                    Container(
+                        child: RaisedButton(
+                      onPressed: () {},
+                      child: Text(AppString.sendotplogin),
+                      textColor: Colors.white,
+                      color: AppColors.btncolor,
+                      padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
+                    ))
+                  ],
+                ),
+              )
             ],
           ),
         )

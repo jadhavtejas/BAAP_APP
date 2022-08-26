@@ -1,4 +1,7 @@
 class AppString {
+
+
+  static const String apptitle = 'BAAP App';
   static const String containerhello = 'Hello';
   static const String containerhelloname = 'there';
   static const String containerinputhinttext = 'What are you looking for?';
@@ -11,10 +14,9 @@ class AppString {
 
   static const String loginwith = 'Login with Phone / Email';
   static const String otponwhatapp = 'Send OTP on WhatsApp';
+  
+  static const String sendotplogin = 'Send OTP';
 
-
-
-
-
+  
 }
 

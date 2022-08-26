@@ -1,4 +1,5 @@
 import 'package:baap_app/consts/AppColors.dart';
+import 'package:baap_app/consts/AppString.dart';
 import 'package:baap_app/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         // routeInformationParser: Routes.routeInformationParser,
         // routerDelegate: _router.routerDelegate,
         // routeInformationProvider: _router.routeInformationProvider,
-        title: 'BAAP APP',
+        title: AppString.apptitle,
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           scaffoldBackgroundColor: AppColors.scaffoldbackground,
