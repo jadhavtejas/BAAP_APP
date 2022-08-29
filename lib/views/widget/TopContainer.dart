@@ -173,7 +173,7 @@ class ContainerEX extends StatelessWidget {
           ),
           Text(
             text1,
-            style: const TextStyle(fontSize: 18, color: Colors.white),
+            style: const TextStyle(fontSize: 12 , color: Colors.white),
           ),
         ],
       )),

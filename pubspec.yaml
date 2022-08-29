@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   go_router: ^4.2.8
   get: ^4.6.5
+  footer: ^0.0.4
 
 dev_dependencies:
   flutter_test:

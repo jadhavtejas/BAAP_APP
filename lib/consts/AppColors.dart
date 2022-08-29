@@ -14,8 +14,8 @@ class AppColors {
   static const Color sendonwhatsapp = Color(0xffC5C6E5);
 
   static const Color btncolor = Color(0xff3C3E6E);
-  static const Color btntextcolor = Color.fromRGBO(197, 198, 229, 1);
-  // static const Color btntextcolor = Color(0xffC5C6E5);
+  static const Color btntextcolor = Color(0xffC5C6E5);
+  static const Color updatextcolor = Color(0xff9191A3);
   // static const Color sendonwhatsapp = Color(0xffC5C6E5);
 
 }
